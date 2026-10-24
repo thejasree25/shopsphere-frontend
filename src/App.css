@@ -1,0 +1,128 @@
+
+/* ================================
+   ShopSphere - Responsive Layout
+   Keeps existing card styles unchanged
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+/* Main page containers */
+.container,
+.page-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Prevent page sections from overflowing */
+main,
+section,
+header,
+footer {
+  max-width: 100%;
+}
+
+/* Responsive forms */
+.form-container {
+  width: 100%;
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+}
+
+/* Responsive tables */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-container table {
+  min-width: 600px;
+  width: 100%;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container,
+  .page-container {
+    padding-inline: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container,
+  .page-container {
+    padding-inline: 16px;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .container,
+  .page-container {
+    padding-inline: 12px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .container,
+  .page-container {
+    padding-inline: 8px;
+  }
+}
